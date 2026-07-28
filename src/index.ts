@@ -1,4 +1,6 @@
-import './styles.css';
+// NOTE: CSS is no longer bundled into this module. Component styles now live in
+// gigi-static (src/css/ux.css, home.css) and are served from the site origin.
+// Storybook/site dev import them from there; the deployed module is JS-only.
 
 export * from './types';
 export * from './components/Button';

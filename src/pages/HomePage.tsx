@@ -1,5 +1,3 @@
-import '../home.css';
-
 export interface HomePageProps {
   logoSrc?: string;
   pizzaImageSrc?: string;
