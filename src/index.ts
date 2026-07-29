@@ -15,4 +15,7 @@ export * from './components/StickyAction';
 export * from './components/OrderSummary';
 export * from './components/CustomizationPanel';
 export * from './components/SocialCard';
+export * from './components/LanguageToggle';
+export * from './components/MenuCategoryIcon';
 export * from './pages/HomePage';
+export * from './i18n';

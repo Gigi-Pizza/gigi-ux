@@ -1,0 +1,104 @@
+{
+  "en": {
+    "skip": "Skip to content",
+    "brand": { "sub": "Pizzeria · Pointe-Claire" },
+    "nav": { "menu": "Menu", "delivery": "Delivery", "visit": "Visit", "order": "Call to order" },
+    "actions": { "call": "Call" },
+    "hero": {
+      "kicker": "Pointe-Claire · Since 1970",
+      "title": "The West Island's neighbourhood pizzeria.",
+      "subtitle": "Pizza, submarines, pasta and more—made for takeout and delivery from our Pointe-Claire kitchen.",
+      "exploreMenu": "Explore the menu",
+      "pizzaAlt": "A cheese-covered Gigi pizza",
+      "findUs": "Find us in Pointe-Claire",
+      "address": "302 Lakeshore"
+    },
+    "service": { "takeout": "Takeout", "delivery": "Delivery", "westIsland": "West Island" },
+    "orderStrip": {
+      "label": "Call for takeout or delivery",
+      "items": "Pizza · Subs · Pasta · Extras · Drinks"
+    },
+    "menu": {
+      "kicker": "Our menu",
+      "title": "Local favourites, built your way.",
+      "desc": "Choose from classic pizzas, signature submarines, baked pasta, poutine, fries and drinks. Pizza is available in four sizes and submarines in three.",
+      "categories": [
+        { "title": "Pizza", "detail": "Small 10\" · Medium 12\" · Large 14\" · X-Large 16\"" },
+        { "title": "Submarines", "detail": "7\" · 10\" · 14\"" },
+        { "title": "Pasta", "detail": "Spaghetti · Lasagna · Baked favourites" },
+        { "title": "Extras", "detail": "Poutine · Fries · Salad · Drinks" }
+      ],
+      "pizzaMenuLabel": "Pizza menu",
+      "pizzaMenuAlt": "Gigi Pizzeria pizza menu",
+      "subsLabel": "Subs, pasta & more",
+      "subsAlt": "Gigi Pizzeria submarines, pasta, extras and drinks menu",
+      "viewFull": "View the full menu",
+      "readyToOrder": "Ready to order? Call"
+    },
+    "delivery": {
+      "kicker": "Delivery area",
+      "title": "Serving the West Island.",
+      "desc": "Delivery zones include Pointe-Claire, Beaconsfield, Baie-D'Urfé, Kirkland and Dorval.",
+      "cta": "Call for delivery"
+    },
+    "zones": ["Pointe-Claire", "Beaconsfield", "Baie-D'Urfé", "Kirkland", "Dorval"],
+    "visit": {
+      "kicker": "Visit Gigi",
+      "title": "Right in the heart of Pointe-Claire.",
+      "maps": "Open in Google Maps"
+    },
+    "finalCta": { "kicker": "Takeout or delivery", "title": "Good pizza is one call away." },
+    "footer": { "order": "Order", "viewMenu": "View menu", "visit": "Visit", "brandSub": "Restaurant" }
+  },
+  "fr": {
+    "skip": "Passer au contenu",
+    "brand": { "sub": "Pizzeria · Pointe-Claire" },
+    "nav": { "menu": "Menu", "delivery": "Livraison", "visit": "Nous visiter", "order": "Commander" },
+    "actions": { "call": "Appelez" },
+    "hero": {
+      "kicker": "Pointe-Claire · Depuis 1970",
+      "title": "La pizzeria de quartier de l'Ouest-de-l'Île.",
+      "subtitle": "Pizza, sous-marins, pâtes et plus—pour emporter ou en livraison, préparés dans notre cuisine de Pointe-Claire.",
+      "exploreMenu": "Voir le menu",
+      "pizzaAlt": "Une pizza Gigi couverte de fromage",
+      "findUs": "Trouvez-nous à Pointe-Claire",
+      "address": "302 Lakeshore"
+    },
+    "service": { "takeout": "Pour emporter", "delivery": "Livraison", "westIsland": "Ouest-de-l'Île" },
+    "orderStrip": {
+      "label": "Appelez pour emporter ou pour la livraison",
+      "items": "Pizza · Sous-marins · Pâtes · Extras · Boissons"
+    },
+    "menu": {
+      "kicker": "Notre menu",
+      "title": "Vos favoris locaux, à votre façon.",
+      "desc": "Choisissez parmi nos pizzas classiques, nos sous-marins signature, nos pâtes au four, poutine, frites et boissons. La pizza est offerte en quatre formats et les sous-marins en trois.",
+      "categories": [
+        { "title": "Pizza", "detail": "Petite 10 po · Moyenne 12 po · Grande 14 po · Très grande 16 po" },
+        { "title": "Sous-marins", "detail": "7 po · 10 po · 14 po" },
+        { "title": "Pâtes", "detail": "Spaghetti · Lasagne · Favoris au four" },
+        { "title": "Extras", "detail": "Poutine · Frites · Salade · Boissons" }
+      ],
+      "pizzaMenuLabel": "Menu pizza",
+      "pizzaMenuAlt": "Menu pizza de Gigi Pizzeria",
+      "subsLabel": "Sous-marins, pâtes et plus",
+      "subsAlt": "Menu des sous-marins, pâtes, extras et boissons de Gigi Pizzeria",
+      "viewFull": "Voir le menu complet",
+      "readyToOrder": "Prêt à commander? Appelez"
+    },
+    "delivery": {
+      "kicker": "Zone de livraison",
+      "title": "Au service de l'Ouest-de-l'Île.",
+      "desc": "Nos zones de livraison incluent Pointe-Claire, Beaconsfield, Baie-D'Urfé, Kirkland et Dorval.",
+      "cta": "Appelez pour la livraison"
+    },
+    "zones": ["Pointe-Claire", "Beaconsfield", "Baie-D'Urfé", "Kirkland", "Dorval"],
+    "visit": {
+      "kicker": "Visitez Gigi",
+      "title": "En plein cœur de Pointe-Claire.",
+      "maps": "Ouvrir dans Google Maps"
+    },
+    "finalCta": { "kicker": "Pour emporter ou livraison", "title": "Une bonne pizza à un appel de distance." },
+    "footer": { "order": "Commander", "viewMenu": "Voir le menu", "visit": "Nous visiter", "brandSub": "Restaurant" }
+  }
+}

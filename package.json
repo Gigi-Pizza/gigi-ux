@@ -22,7 +22,7 @@
     "react-dom": ">=18"
   },
   "devDependencies": {
-    "@gigi/runtime-manifest": "git+https://github.com/Gigi-Pizza/gigi-manifest.git#v0.2.0",
+    "@gigi/runtime-manifest": "git+https://github.com/Gigi-Pizza/gigi-manifest.git#v0.3.0",
     "@rmc-toolkit/vite": "^0.5.0",
     "@storybook/addon-a11y": "^10.5.5",
     "@storybook/addon-docs": "^10.5.5",
