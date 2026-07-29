@@ -17,5 +17,6 @@ export * from './components/CustomizationPanel';
 export * from './components/SocialCard';
 export * from './components/LanguageToggle';
 export * from './components/MenuCategoryIcon';
+export * from './components/ChoiceButtonGroup';
 export * from './pages/HomePage';
 export * from './i18n';
