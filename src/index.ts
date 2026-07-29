@@ -18,5 +18,6 @@ export * from './components/SocialCard';
 export * from './components/LanguageToggle';
 export * from './components/MenuCategoryIcon';
 export * from './components/ChoiceButtonGroup';
+export * from './components/SiteHeader';
 export * from './pages/HomePage';
 export * from './i18n';

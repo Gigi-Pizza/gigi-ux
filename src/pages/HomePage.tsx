@@ -1,5 +1,5 @@
 import { useCopy } from '../i18n';
-import { LanguageToggle } from '../components/LanguageToggle';
+import { SiteHeader } from '../components/SiteHeader';
 import { MenuCategoryIcon, type MenuCategoryIconType } from '../components/MenuCategoryIcon';
 
 export interface HomePageProps {
@@ -28,21 +28,7 @@ export function HomePage({
     <div className="home-page">
       <a className="home-skip-link" href="#main-content">{t.skip}</a>
 
-      <header className="home-header">
-        <a className="home-brand" href="#top" aria-label="Gigi Pizzeria">
-          <img src={logoSrc} alt="" />
-          <span><strong>Gigi</strong><small>{t.brand.sub}</small></span>
-        </a>
-        <nav className="home-nav" aria-label="Primary">
-          <a href="#menu">{t.nav.menu}</a>
-          <a href="#delivery">{t.nav.delivery}</a>
-          <a href="#visit">{t.nav.visit}</a>
-        </nav>
-        <div className="home-header-actions">
-          <LanguageToggle />
-          <a className="home-header-cta" href={phoneHref}>{t.nav.order}</a>
-        </div>
-      </header>
+      <SiteHeader logoSrc={logoSrc} hrefBase="" />
 
       <main id="main-content">
         <section className="home-hero" id="top">
