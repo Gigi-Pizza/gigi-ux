@@ -4,6 +4,8 @@ import { Button } from './Button';
 export interface ChoiceButtonOption {
   id: string;
   label: ReactNode;
+  /** Optional amount rendered separately so it can align or wrap independently. */
+  price?: ReactNode;
 }
 
 export interface ChoiceButtonGroupProps {
@@ -38,11 +40,17 @@ export function ChoiceButtonGroup({
             key={option.id}
             fullWidth
             variant={selected ? 'primary' : 'neutral'}
+            className={`gigi-choice-button${showSelectionMark ? ' gigi-choice-button--with-mark' : ''}`}
             aria-pressed={selected}
             onClick={() => onSelect?.(option.id)}
           >
-            {selected && showSelectionMark ? <span aria-hidden="true">✓ </span> : null}
-            {option.label}
+            {showSelectionMark && (
+              <span className="gigi-choice-button__indicator" aria-hidden="true">
+                {selected ? '✓' : ''}
+              </span>
+            )}
+            <span className="gigi-choice-button__text">{option.label}</span>
+            {option.price != null && <span className="gigi-choice-button__price">{option.price}</span>}
           </Button>
         );
       })}

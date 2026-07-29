@@ -2,10 +2,10 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { ChoiceButtonGroup } from './components/ChoiceButtonGroup';
 
 const pizzaOptions = [
-  { id: 'plain', label: 'Plain · $15.15' },
-  { id: 'pepperoni', label: 'Pepperoni · $17.30' },
-  { id: 'all-dressed', label: 'All Dressed · $18.55' },
-  { id: 'deluxe', label: 'Deluxe · $21.00' },
+  { id: 'plain', label: 'Plain', price: '$15.15' },
+  { id: 'pepperoni', label: 'Pepperoni', price: '$17.30' },
+  { id: 'all-dressed', label: 'All Dressed', price: '$18.55' },
+  { id: 'deluxe', label: 'Deluxe', price: '$21.00' },
 ];
 
 const meta = {

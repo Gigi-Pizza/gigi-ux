@@ -23,7 +23,7 @@ import { ChoiceButtonGroup } from "@gigi/ux/index.mjs";
 
 | Prop | Type | Default | Purpose |
 |---|---|---|---|
-| `options` | `readonly { id: string; label: ReactNode }[]` | required | Buttons to render |
+| `options` | `readonly { id: string; label: ReactNode; price?: ReactNode }[]` | required | Buttons to render; price aligns or wraps independently from the label |
 | `selectedIds` | `readonly string[]` | `[]` | Controls selected styling and `aria-pressed` |
 | `onSelect` | `(optionId: string) => void` | — | Reports the pressed option; the consumer owns selection rules |
 | `columns` | `1 \| 2` | `1` | Uses the standard stack or compact two-column layout |
@@ -34,6 +34,11 @@ import { ChoiceButtonGroup } from "@gigi/ux/index.mjs";
 The component deliberately does not decide whether selection is single or
 multiple. The ordering state machine owns that behavior; this component only
 renders controlled state and reports button presses.
+
+When `price` is provided, the control renders a dedicated indicator, flexible
+label, and trailing price. Narrow choices automatically move the price below
+the label instead of crowding it against the edge. Keep currency out of the
+`label` string so this responsive behavior remains available.
 
 ### Single-choice example
 

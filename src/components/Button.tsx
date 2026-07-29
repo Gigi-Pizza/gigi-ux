@@ -29,7 +29,7 @@ export function Button({
       {...props}
     >
       {leadingIcon && <span aria-hidden="true">{leadingIcon}</span>}
-      <span>{children}</span>
+      <span className="gigi-button__label">{children}</span>
       {trailingIcon && <span aria-hidden="true">{trailingIcon}</span>}
     </button>
   );
