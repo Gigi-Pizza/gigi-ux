@@ -16,3 +16,15 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {};
 export const Selected: Story = { args: { selected: true, actionLabel: 'Selected' } };
+export const InOrder: Story = {
+  args: {
+    statusLabel: '1 in your order',
+    actionLabel: 'Add another',
+  },
+};
+export const MultipleInOrder: Story = {
+  args: {
+    statusLabel: '3 in your order',
+    actionLabel: 'Add another',
+  },
+};
