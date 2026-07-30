@@ -14,6 +14,15 @@ import { manifest } from '@gigi/runtime-manifest';
 // @esm.sh/react -> react), so this rmc build config is production-only.
 export default defineConfig({
   esbuild: { jsx: 'automatic' },
+  resolve: {
+    // Redirect any bare `react` value import (the JSX transform can inject one,
+    // and — unlike the old esbuild build — the rolldown/OXC toolchain doesn't
+    // externalize it) to the externalized @esm.sh/react. Without this, React's
+    // CommonJS build gets bundled into this module and its `process.env.NODE_ENV`
+    // throws "process is not defined" in the browser. `^react$` matches ONLY the
+    // bare specifier, never `react/jsx-runtime`.
+    alias: [{ find: /^react$/, replacement: '@esm.sh/react' }],
+  },
   // The module is JS + CSS only; static images are served from the site/assets
   // origin separately, not bundled into this module's upload.
   publicDir: false,
