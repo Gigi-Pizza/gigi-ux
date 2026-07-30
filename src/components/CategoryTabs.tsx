@@ -28,7 +28,7 @@ export function CategoryTabs({
           key={category}
           variant={category === active ? 'primary' : 'subtle'}
           size="small"
-          leadingIcon={<MenuCategoryIcon type={categoryIcons[category]} />}
+          leadingIcon={<MenuCategoryIcon type={categoryIcons[category]} size={24} />}
           aria-pressed={category === active}
           onClick={() => onChange?.(category)}
         >

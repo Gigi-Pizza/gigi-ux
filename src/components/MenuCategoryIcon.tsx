@@ -5,6 +5,8 @@ export type MenuCategoryIconType = 'pizza' | 'submarine' | 'pasta' | 'extras' | 
 export interface MenuCategoryIconProps extends SVGProps<SVGSVGElement> {
   type: MenuCategoryIconType;
   label?: string;
+  /** Locks the rendered dimensions for compact placements such as navigation. */
+  size?: number;
 }
 
 function PizzaGlyph() {
@@ -75,7 +77,9 @@ const glyphs: Record<MenuCategoryIconType, () => React.JSX.Element> = {
 export function MenuCategoryIcon({
   type,
   label,
+  size,
   className = '',
+  style,
   ...props
 }: MenuCategoryIconProps) {
   const Glyph = glyphs[type];
@@ -88,6 +92,14 @@ export function MenuCategoryIcon({
       {...props}
       {...accessibility}
       className={`home-menu-category-icon ${className}`.trim()}
+      style={size === undefined ? style : {
+        ...style,
+        width: size,
+        height: size,
+        minWidth: size,
+        flex: `0 0 ${size}px`,
+        filter: 'none',
+      }}
       viewBox="0 0 96 96"
       xmlns="http://www.w3.org/2000/svg"
       data-icon={type}
