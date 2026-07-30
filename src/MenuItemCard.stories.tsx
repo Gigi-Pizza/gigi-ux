@@ -15,6 +15,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {};
+export const WithImage: Story = { args: { imageSrc: '/GigiLogo.png', imageAlt: '' } };
 export const Selected: Story = { args: { selected: true, actionLabel: 'Selected' } };
 export const InOrder: Story = {
   args: {
