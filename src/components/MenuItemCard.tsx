@@ -1,4 +1,5 @@
-import { useEffect, useState, type HTMLAttributes } from 'react';
+import { useEffect, useState } from '@esm.sh/react';
+import type { HTMLAttributes } from 'react';
 
 export interface MenuItemCardProps extends HTMLAttributes<HTMLElement> {
   heading: string;
