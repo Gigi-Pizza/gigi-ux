@@ -1,6 +1,6 @@
 import type { SVGProps } from 'react';
 
-export type MenuCategoryIconType = 'pizza' | 'submarine' | 'pasta' | 'extras';
+export type MenuCategoryIconType = 'pizza' | 'submarine' | 'pasta' | 'extras' | 'drinks';
 
 export interface MenuCategoryIconProps extends SVGProps<SVGSVGElement> {
   type: MenuCategoryIconType;
@@ -53,11 +53,23 @@ function ExtrasGlyph() {
   );
 }
 
+function DrinksGlyph() {
+  return (
+    <>
+      <path d="M31 36h34l-3 35H35l-4-35Z" />
+      <path d="M29 36h38M39 29h23" />
+      <path d="m57 29 7-12" />
+      <path d="M38 48h21" />
+    </>
+  );
+}
+
 const glyphs: Record<MenuCategoryIconType, () => React.JSX.Element> = {
   pizza: PizzaGlyph,
   submarine: SubmarineGlyph,
   pasta: PastaGlyph,
   extras: ExtrasGlyph,
+  drinks: DrinksGlyph,
 };
 
 export function MenuCategoryIcon({

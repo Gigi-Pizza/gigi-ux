@@ -12,7 +12,7 @@ const meta = {
   argTypes: {
     type: {
       control: 'select',
-      options: ['pizza', 'submarine', 'pasta', 'extras'],
+      options: ['pizza', 'submarine', 'pasta', 'extras', 'drinks'],
     },
   },
 } satisfies Meta<typeof MenuCategoryIcon>;
@@ -27,6 +27,7 @@ const iconLabels: Array<{ type: MenuCategoryIconType; label: string }> = [
   { type: 'submarine', label: 'Submarines' },
   { type: 'pasta', label: 'Pasta' },
   { type: 'extras', label: 'Extras' },
+  { type: 'drinks', label: 'Drinks' },
 ];
 
 export const CompleteSet: Story = {

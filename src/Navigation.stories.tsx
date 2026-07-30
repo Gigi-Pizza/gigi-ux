@@ -11,3 +11,16 @@ export const Brand: Story = { args: { logoSrc: '/GigiLogo.png' }, decorators: [(
 export const MenuNavigation: Story = {
   render: () => <MobileShell><BrandHeader logoSrc="/GigiLogo.png" /><CategoryTabs active="Pizza" /><div className="gigi-screen-content" /></MobileShell>,
 };
+
+export const NarrowCarousel: Story = {
+  decorators: [(Story) => <div style={{ width: 320, height: 220, overflow: 'hidden' }}><Story /></div>],
+  render: () => (
+    <MobileShell>
+      <div className="gigi-ordering-tabsbar">
+        <h1 className="gigi-ordering-title">Order Online</h1>
+        <CategoryTabs active="Pizza" />
+      </div>
+      <div className="gigi-screen-content" />
+    </MobileShell>
+  ),
+};

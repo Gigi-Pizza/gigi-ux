@@ -1,5 +1,14 @@
 import type { MenuCategory } from '../types';
 import { Button } from './Button';
+import { MenuCategoryIcon, type MenuCategoryIconType } from './MenuCategoryIcon';
+
+const categoryIcons: Record<MenuCategory, MenuCategoryIconType> = {
+  Pizza: 'pizza',
+  Subs: 'submarine',
+  Pasta: 'pasta',
+  Extras: 'extras',
+  Drinks: 'drinks',
+};
 
 export interface CategoryTabsProps {
   categories?: MenuCategory[];
@@ -19,6 +28,7 @@ export function CategoryTabs({
           key={category}
           variant={category === active ? 'primary' : 'subtle'}
           size="small"
+          leadingIcon={<MenuCategoryIcon type={categoryIcons[category]} />}
           aria-pressed={category === active}
           onClick={() => onChange?.(category)}
         >

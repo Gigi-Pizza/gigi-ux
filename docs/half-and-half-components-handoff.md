@@ -111,6 +111,35 @@ published Gigi stylesheet before using these components.
 The existing StickyAction stories continue to exercise its default state. Add a
 disabled story if its presentation changes in the future.
 
+## Updated component: `MenuItemCard`
+
+`MenuItemCard` accepts an optional localized status string:
+
+```ts
+statusLabel?: string
+```
+
+Ordering Browse screens use it to show the total quantity of that menu item
+across every configured cart line. For example, two separately configured
+Cheese Pizza lines with quantities `1` and `2` render `3 in your order`. The
+status is informational; pressing either the card or `Add another` starts a
+new configuration and never mutates an existing cart line.
+
+```tsx
+<MenuItemCard
+  heading="Cheese"
+  description="Classic tomato sauce and mozzarella"
+  price="From $18.55"
+  statusLabel="1 in your order"
+  actionLabel="Add another"
+  onAction={configureCheese}
+/>
+```
+
+The status pill uses the success token and collapses beneath the heading when
+the card becomes too narrow. Consumers own localization; recommended copy is
+`{quantity} in your order` and `{quantity} dans votre commande`.
+
 ## Integration checklist
 
 1. Build `gigi-ux` before `gigi-ordering`.
